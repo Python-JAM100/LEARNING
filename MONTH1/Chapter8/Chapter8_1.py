@@ -24,10 +24,3 @@ S = Student("Susan", 15)
 M.study("Python")
 T.watch_movie()
 S.watch_movie()
-
-# When run python Chapter8_1.py:
-"""
-Margaret is learning Python.
-Terry is reading Manga.
-Susan is watching cartoon.
-"""
