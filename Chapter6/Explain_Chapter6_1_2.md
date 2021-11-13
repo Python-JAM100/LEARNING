@@ -1,7 +1,7 @@
 
 ## Chapter 6, 1&2 Explain usage of __main__
 
-__main__ is to ensure which file is running the main code.
+```__main__``` is to ensure which file is running the main code.
 
 Due to there can be function imported from somewhere and same function name 
 
