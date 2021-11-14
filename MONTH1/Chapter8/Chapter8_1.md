@@ -1,5 +1,21 @@
+## Explanation of ```__init__``` 
+The ```__init__()``` method is called the constructor in Python.
+
+Constructors are used to initialize the object’s state.
+
+The task of constructors is to initialize(assign values) to the data members of the class when an object of class is created. 
+
+A constructor also contains collection of statements(i.e. instructions) that are executed at time of Object creation.
+
+It is run as soon as an object of a class is instantiated. 
+
+## Explanation of self
+self represents the instance of the class. By using the “self” keyword we can access the attributes and methods of the class in python. It binds the attributes with the given arguments
+
+The reason you need to use self. is because Python does not use the @ syntax to refer to instance attributes. Python decided to do methods in a way that makes the instance to which the method belongs be passed automatically, but not received automatically: the first parameter of methods is the instance the method is called on.
+
 ## Example Chapter 8_1
-```brash
+```bash
 class Student(object):
 # one class has object and function, constructor (constructor = init function)
 
@@ -12,8 +28,6 @@ class Student(object):
     def study(self, course_name):
         print('%s is learning %s.' % (self.name, course_name))
 
-    # PEP 8要求标识符的名字用全小写多个单词用下划线连接
-    # 但是部分程序员和公司更倾向于使用驼峰命名法(驼峰标识)
     def watch_movie(self):
         if self.age < 18:
             print('%s is watching cartoon.' % self.name)
