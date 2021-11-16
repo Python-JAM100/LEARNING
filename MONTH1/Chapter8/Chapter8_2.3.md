@@ -3,7 +3,7 @@
 - To define protected member prefix the menber name with a single underscore “_”.
 - __Note__: The ```__init__``` method is a constructor and runs as soon as an object of a class is instantiated.
 
-## Example Chapter 8_2.1
+## Example Chapter 8_2.3
 ```bash
 # Creating a base class
 class Base:
