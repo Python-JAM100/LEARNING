@@ -16,3 +16,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# When run python Chapter8_2.2.py
+"""
+hello
+__bar
+hello
+"""
