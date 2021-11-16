@@ -1,3 +1,6 @@
+## Explanation of __Name mangling__
+- We can add _classname of infront private object to access the private object of outside the class. This method call name mangling.
+
 ## Example Chapter 8_2.2
 ```bash
 class Test:
@@ -5,6 +8,7 @@ class Test:
     # constructor
     def __init__(self, foo):
         self.__foo = foo
+        # __foo is private member
 
     # private function 
     def __bar(self):
@@ -16,7 +20,7 @@ def main():
     test = Test('hello')
     # To access private object, Test must be private
     test._Test__bar()
-    # To accedd private object, Test must be private
+    # To access private object, Test must be private
     print(test._Test__foo)
 
 if __name__ == "__main__":
@@ -24,7 +28,7 @@ if __name__ == "__main__":
 
 ```
 
-## Ouput Chapter 8_2.2
+## Output Chapter 8_2.2
 ```
 hello
 __bar
